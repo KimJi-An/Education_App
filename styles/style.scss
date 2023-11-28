@@ -59,18 +59,41 @@ body {
     justify-content: space-between;
     gap: 40px;
 
-    .card_title {
+    .card__title {
       font-size: 28px;
     }
 
     .card__footer {
-      font-size: 12px;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: 1px solid black;
+      }
+
+      .card__price {
+        background-color: #FFDD2C;
+        color: black;
+      }
+
+      .card__length {
+        background-color: white;
+        color: black;
+      }
     }
 
     &:first-child {
       background-color: #292D33;
       color: white;
       border: 1px solid white;
+
+      .card__title {
+        color: white;
+      }
     }
 
     &:nth-child(2) {
