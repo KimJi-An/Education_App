@@ -1,3 +1,45 @@
 @charset "utf-8";
+@import url("./reset.scss");
 
+body {
+  background-color: #DCE6D1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.phone {
+  background-color: black;
+  border-radius: 50px;
+  height: 95%;
+  width: 420px;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  overflow-x: scroll;
+
+  .header__list {
+    display: flex;
+    color: white;
+    gap: 10px;
+    width: max-content;
+
+    .header__list-item {
+      border: 1px solid rgba($color: #fff, $alpha: 0.5);
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    .header__list-item--inverted {
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+.header::-webkit-scrollbar {
+  display: none;
+}
