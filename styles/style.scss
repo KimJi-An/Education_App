@@ -43,3 +43,58 @@ body {
 .header::-webkit-scrollbar {
   display: none;
 }
+
+.cards {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  .cards__card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+
+    .card_title {
+      font-size: 28px;
+    }
+
+    .card__footer {
+      font-size: 12px;
+    }
+
+    &:first-child {
+      background-color: #292D33;
+      color: white;
+      border: 1px solid white;
+    }
+
+    &:nth-child(2) {
+      background-color: #F5F3F0;
+    }
+
+    &:nth-child(3) {
+      background-color: #F9FDC0;
+    }
+
+    &:nth-child(4) {
+      background-color: #B5A3F7;
+    }
+
+    &:nth-child(5) {
+      background-color: #FED5D5;
+    }
+
+    &:nth-child(6) {
+      background-color: #D1FEDE;
+    }
+
+    &:nth-child(3n) {
+      grid-column: span 2;
+    }
+  }
+}
