@@ -4,9 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.scss" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Css Layout Masterclass</title>
   </head>
   <body>
+    <div class="phone">
+      <div class="card-container">
+        <div class="card-detail">
+          <header class="profile">
+            <div class="profile__container">
+              <span class="material-symbols-outlined">account_circle</span>
+              <span class="profile__name">Timothy Snyder</span>
+            </div>
+            <span class="material-symbols-outlined">more_horiz</span>
+          </header>
+          <div class="contents">
+            <h1>The Making of Modern Ukraine</h1>
+            <div class="progress">
+              <h2>In progress</h2>
+              <div class="progress-bar">
+                <h3>63%</h3>
+                <progress value="63" max="100"></progress>
+                <div class="date">
+                  <span>Sep 10, 22</span>
+                  <span>Dec 10, 22</span>
+                </div>
+              </div>
+              <span class="continue-btn">Continue Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-detail">
+          <header class="profile">
+            <div class="profile__container">
+              <span class="material-symbols-outlined">account_circle</span>
+              <span class="profile__name">Jaylon</span>
+            </div>
+            <span class="card__price">Free</span>
+          </header>
+        </div>
+      </div>
+    </div>
     <div class="phone">
       <header class="header">
         <ul class="header__list">
@@ -18,10 +56,10 @@
       </header>
       <div class="cards">
         <div class="cards__card">
-          <h2 class="card__title">The Making of Modern Art</h2>
+          <h2 class="card__title">The Making of Modern ...</h2>
           <div class="card__footer">
-            <span class="card__price">Free</span>
-            <span class="card__length">2</span>
+            <h3>63%</h3>
+            <progress value="63" max="100"></progress>
           </div>
         </div>
         <div class="cards__card">
@@ -32,7 +70,7 @@
           </div>
         </div>
         <div class="cards__card">
-          <h2 class="card_title">Graphic Design</h2>
+          <h2 class="card__title">Graphic Design.<br>Professium</h2>
           <div class="card__footer">
             <span class="card__price">$199/month</span>
             <span class="card__length">9 months</span>
@@ -48,7 +86,7 @@
         <div class="cards__card">
           <h2 class="card__title">Inclusive Web Design</h2>
           <div class="card__footer">
-            <span class="card__price">$99/month</span>
+            <span class="card__price">$99/mon</span>
             <span class="card__length">3</span>
           </div>
         </div>
